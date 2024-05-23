@@ -80,3 +80,5 @@ return result.effects.status;
 
 ## Summary
 This guide demonstrates how to create and transfer an NFT using Programmable Transaction Blocks (PTB) on the Sui blockchain with both Rust and TypeScript. By leveraging PTBs, developers can perform complex operations in a streamlined and efficient manner, ensuring atomic execution of multiple transactions.
+
+Check out the [Sui DOcs](https://docs.sui.io/concepts/transactions/prog-txn-blocks) to read more about Programmable Transaction Blocks 
