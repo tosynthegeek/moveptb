@@ -46,7 +46,7 @@ commands.push(TransactionData::new_object(
 commands.push(transfer::create_transfer(coin_object_id, recipient, 1));
 ```
 ### Tx Construction
-The transaction is constructed with the coin object ID, recipient, and gas price. With this we can add the inputs and command to the transaction `tx`:
+The transaction is constructed with the coin object ID, recipient, and gas price. With this, we can add the inputs and command to the transaction `tx`:
 ```rust
 let tx = Transaction::new(coin_object_id, recipient, 0);
 
@@ -79,6 +79,6 @@ return result.effects.status;
 ```
 
 ## Summary
-This guide demonstrates how to create and transfer an NFT using Programmable Transaction Blocks (PTB) on the Sui blockchain with both Rust and TypeScript. By leveraging PTBs, developers can perform complex operations in a streamlined and efficient manner, ensuring atomic execution of multiple transactions.
+This guide demonstrates how to create and transfer an NFT using Programmable Transaction Blocks (PTB) on the Sui blockchain with both Rust and TypeScript. By leveraging PTBs, developers can perform complex operations in a streamlined and efficient manner, ensuring the atomic execution of multiple transactions.
 
 Check out the [Sui Docs](https://docs.sui.io/concepts/transactions/prog-txn-blocks) to read more about Programmable Transaction Blocks 
