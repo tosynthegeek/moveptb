@@ -1,10 +1,10 @@
 # Building PTBs in Sui: A Guide for Rust and TypeScript Developers
-Programmable Transaction Blocks(PTB) is a feature on the Sui blockchain that allows multiple transactions(upt to 1024) to be chained together and executed atomically, lowering fees and latency. These operations are executed atomically, meaning either all succeed or none do. Transactions within a PTB can depend on the outputs of previous transactions. This allows for more complex operations to be built up from simpler ones.
+Programmable Transaction Blocks(PTB) is a feature on the Sui blockchain that allows multiple transactions(up to 1024) to be chained together and executed atomically, lowering fees and latency. These operations are executed atomically, meaning either all succeed or none do. Transactions within a PTB can depend on the outputs of previous transactions. This allows for more complex operations to be built up from simpler ones.
 
 The Sui blockchain operates on an object-centric model. Everything on Sui, from coins to NFTs to complex DeFi protocols, is represented as an object. 
 
 ## Structure of Programmable Transaction Blocks
-The PTB consist of 2 major parts: inputs and commands.
+The PTB consists of 2 major parts: inputs and commands.
 ```typescript
 {  
 	inputs:  [Input],  
@@ -19,7 +19,7 @@ After executing all transactions within a PTB, each transaction produces a resul
 -   New object references: If a transaction creates a new object, the reference ID of the created object becomes the result.
 -   Boolean values: Transactions might simply succeed or fail, with a boolean result indicating success.
 
-## Sui Programmable Transaction Blocks with Rust
+## Sui Programmable Transaction Blocks with Rust(PTB)
 The Rust [code example](https://github.com/tosynthegeek/moveptb/tree/main/rustptb) is designed to create and transfer an NFT (Non-Fungible Token) using the Sui blockchain. It defines a struct for the NFT, a function to create an NFT object, and a main function to build and execute a transaction that includes creating and transferring the NFT.
 ### Inputs
 The inputs for the transaction are defined as a vector of `CallArg::Pure` items, which are serialized forms of the NFT name and description:
